@@ -1,0 +1,143 @@
+.pageContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+}
+
+.conversationContainer {
+  border: 0.2rem solid var(--color-primary);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.participantsList {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.participantLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.participantLink:hover {
+  text-decoration: underline;
+}
+
+.messagesList {
+  display: flex;
+  flex-direction: column-reverse;
+  border-bottom: 0.3rem solid var(--color-primary);
+  border-top: 0.3rem solid var(--color-primary);
+  height: 70vh;
+  overflow-y: scroll;
+}
+
+.messagesList::-webkit-scrollbar {
+  width: 12px;
+}
+
+.messagesList::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+}
+
+.message {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 0.5rem;
+  padding: 0.2rem 1rem;
+}
+
+.username {
+  font-weight: bold;
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.username:hover {
+  text-decoration: underline;
+}
+
+.subtext {
+  opacity: 0.5;
+  font-size: 0.8rem;
+}
+
+.messageBody {
+  grid-area: 2/2;
+}
+
+.message > button {
+  grid-area: 3/2;
+  visibility: hidden;
+  background-color: unset;
+  color: var(--color-text);
+  opacity: 0.5;
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+  border: none;
+  padding: 0.2rem 0;
+  max-width: max-content;
+}
+
+.message:hover > button {
+  visibility: visible;
+}
+
+.message > button:hover {
+  text-decoration: underline;
+}
+
+.messageForm {
+  flex: 1;
+  display: flex;
+}
+
+.actionsContainer {
+  display: flex;
+}
+
+.messageForm > input {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  width: 80%;
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  font-family: "Rubik", sans-serif;
+  border: none;
+}
+
+.messageForm > button,
+.refreshBtn {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+  border: none;
+}
+
+.messageForm > button {
+  padding: 0.2rem 0.8rem;
+  border-right: 0.1rem solid var(--color-primary);
+}
+
+.refreshBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  padding: 0.2rem 0.4rem;
+}
+
+.messageForm > button:disabled,
+.refreshBtn:disabled {
+  cursor: default;
+  opacity: 50%;
+}

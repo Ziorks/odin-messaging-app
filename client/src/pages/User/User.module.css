@@ -1,0 +1,45 @@
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.container > div {
+  width: 100%;
+  padding: 1rem;
+  border-bottom: 1px solid var(--color-primary);
+}
+
+.userHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.messageBtn {
+  display: block;
+  margin: 1rem auto;
+  cursor: pointer;
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.4rem 0.6rem;
+  transition: background-color 0.1s ease-out;
+}
+
+.messageBtn:hover:not(:disabled) {
+  background-color: var(--color-accent);
+}
+
+.messageBtn:disabled {
+  cursor: default;
+  opacity: 50%;
+}
+
+.error {
+  color: red;
+}

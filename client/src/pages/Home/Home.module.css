@@ -1,0 +1,44 @@
+.mainContainer {
+  text-align: center;
+  padding: 1.5rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.header {
+  font-size: 3.5rem;
+  color: var(--color-text);
+}
+
+.highlight {
+  color: var(--color-accent);
+}
+
+.subheader {
+  margin-top: 1rem;
+  color: var(--color-text);
+}
+
+.linkContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.linkContainer > a {
+  cursor: pointer;
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  cursor: pointer;
+  font-size: 1.4rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  padding: 0.4rem 0.6rem;
+  transition: background-color 0.1s ease-out;
+}
+
+.linkContainer > a:hover {
+  background-color: var(--color-accent);
+}

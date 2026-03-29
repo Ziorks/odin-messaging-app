@@ -1,0 +1,112 @@
+.mainContainer {
+  /* background-color: var(--color-primary-dark);
+  border-radius: 1rem; */
+  padding: 2rem 1rem;
+  margin: 0 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.profilePicContainer {
+  margin: 0 auto;
+  position: relative;
+}
+
+.uploadBtn,
+.removeBtn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: var(--color-text);
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.uploadBtn {
+  background-color: var(--color-primary-dark);
+  font-size: 1rem;
+}
+
+.removeBtn {
+  background-color: red;
+  font-size: 0.7rem;
+}
+
+.form {
+  margin-top: 2rem;
+}
+
+.form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.form > div > label {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+
+.form > div > input,
+.form > div > textarea {
+  /* border-radius: 1rem; */
+  padding: 0.5rem 1rem;
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+}
+
+.form > div > textarea {
+  resize: vertical;
+}
+
+.form > button {
+  display: block;
+  margin: 1rem auto;
+  cursor: pointer;
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.4rem 0.6rem;
+  transition: background-color 0.1s ease-out;
+}
+
+.form > button:hover:not(:disabled) {
+  background-color: var(--color-accent);
+}
+
+.form > button:disabled {
+  cursor: default;
+  opacity: 50%;
+}
+
+.formToggleBtn {
+  display: block;
+  margin-left: auto;
+  cursor: pointer;
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.4rem 0.6rem;
+  transition: background-color 0.1s ease-out;
+}
+
+.formToggleBtn:hover {
+  background-color: var(--color-accent);
+}

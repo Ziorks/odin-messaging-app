@@ -1,0 +1,8 @@
+.input {
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  width: 80%;
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  font-family: "Rubik", sans-serif;
+}
